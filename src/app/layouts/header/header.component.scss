@@ -1,0 +1,11 @@
+.header-space {
+  flex: 1 1 auto;
+}
+
+.menu {
+  justify-content: space-between;
+
+  .menu-items {
+    flex: 1 auto;
+  }
+}

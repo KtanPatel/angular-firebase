@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <button mat-button [routerLink]="['']">Firebase Demo</button>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="header-space"></span>
+  <div class="menu">
+    <button *ngFor="let nav of navigation" mat-button [routerLink]="nav.url">{{nav.title}}</button>
+    <span>
+      <button mat-button *ngIf="isSecure" (click)="logout()">LogOut</button>
+      <!-- <mat-slide-toggle [checked]="isDarkTheme | async" (change)="toggleDarkTheme($event.checked)">
+      </mat-slide-toggle> -->
+    </span>
+  </div>
+</mat-toolbar>
